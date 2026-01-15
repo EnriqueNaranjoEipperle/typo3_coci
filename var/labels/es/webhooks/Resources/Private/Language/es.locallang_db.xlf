@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:webhooks/Resources/Private/Language/locallang_db.xlf" date="2023-01-11T20:22:32Z" product-name="webhooks" target-language="es">
+    <header/>
+    <body>
+      <trans-unit id="sys_webhook.description" resname="sys_webhook.description" approved="yes">
+        <source>Description</source>
+        <target state="final">Descripción</target>
+      </trans-unit>
+      <trans-unit id="sys_webhook.description.description" resname="sys_webhook.description.description" approved="yes">
+        <source>Additional information about the webhook.</source>
+        <target state="final">Información adicional sobre el webhook.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

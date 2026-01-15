@@ -1,0 +1,33 @@
+#customcategory = vt12 = Sitepage TYPO3 12
+#customsubcategory = logo=Logo der Webseite
+#customsubcategory=misc=Sonstiges
+vt12 {
+#cat = vt12/links; type = int+: label = Roospage UID: UID der Startseite der Website
+    rootUid = 6
+
+#cat = vt12/logo; type = file: label = Logo-Datei: Pfad zu einer Bilddateri, die als Logo oben lnks ausgegeben wird
+    logoFile = EXT:vt12/Resources/Public/icons/logo.png
+
+#cat = vt12/logo; type = string: label =  Alt-Text: Alternativtext für das Logo, wichtig für Barierefreiheit
+    logoAlt = Logo meiner Firma
+
+    # cat = vt12/logo; type = int+: label = Title-Text: Text für das title-Attribut, wichtig für Barierefreiheit und SEO
+    logoTitle = Zur Startseite
+
+#cat = vt12/links; type = int+: label = Logo Höhe: Höhe des Logos in Pixel. Bild wird durch TYPO3 entsprechend verkleinert
+    logoHeight = 100
+
+#cat = vt12/links; type = int+: label = Meta Seiten-ID: ID der Seite, ab der die Meta-NAvigation gerendert werden soll
+    metaNavPid = 22
+
+#cat = vt12/misc; type = string: label = Copyright-Info: Text der im Footer als Copyrighthinweis angezeigt wird
+    copyrightText = Copyright &copy; Kochwelt
+    
+# cat = vt12/links; type = int+: label = Such-Plugin ID: ID des Content Elements für die Suche
+    searchPluginId = 27
+
+# cat = vt12/links; type = int+: label = Suchseiten ID: ID der Suchergebnisseite
+    searchTargetPid = 28
+
+}
+

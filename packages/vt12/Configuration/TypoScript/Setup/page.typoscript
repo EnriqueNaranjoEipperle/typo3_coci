@@ -1,0 +1,88 @@
+config {
+    # Aktiviere die Asset-Pipeline
+    assets.enable = 1
+
+    # Optional: Pfad für die generierten Assets
+    assets.folder = _assets
+}
+
+page = PAGE
+page {
+
+    meta{ ## Viewport for responsive Design
+        viewport = width=device-width, initial-scale=1.0
+    }
+    ## Favicon  / Shortcut Icon der Seite
+    shortcutIcon = EXT:vt12/Resources/Public/icons/logo_small.ico
+    ## Stradard TypeNum für Seitenaufrufe
+    typeNum = 0
+    ## Einbinden von CSS und JS Dateien
+    includeCSS {
+        ## Haupt Stylesheet
+        style = EXT:vt12/Resources/Public/css/style.css
+        ## Zusätzliche, benutzerdefinierte Styles
+        custom =  EXT:vt12/Resources/Public/css/custom.css
+        ## Stylesheet für Einzelseiten
+       einzeln =  EXT:vt12/Resources/Public/css/einzeln.css
+    }
+
+    ## Einbinden von JavaScript Dateien im Footer
+    includeJSFooter {
+        ## Haupt-Skript
+        script = EXT:vt12/Resources/Public/script/script.js
+        fslightbox = EXT:vt12/Resources/Public/script/fslightbox.js
+    }
+
+    ## Definition des Fluid Templates
+    10 = FLUIDTEMPLATE
+    10 {
+    ## Pfade zu Layouts -Dateien
+    layoutRootPath = EXT:vt12/Resources/Private/Layouts/ 
+    ## Pfade zu Navigation -Menu
+    partialRootPath = EXT:vt12/Resources/Private/Partials/
+
+    ## Auswahl des Templates basierend auf dem Seitenlayout
+    file.stdWrap.cObject = CASE
+    file.stdWrap.cObject {
+        ## Schlusel für das CASE-Objekt: pagelayout der Seite
+        key.data = pagelayout
+
+        # Korrekte Schreibweise des Keys
+        pagets__layoutwithomlet = TEXT
+        pagets__layoutwithomlet.value = EXT:vt12/Resources/Private/Templates/Default.html
+        pagets__layoutwitouthomlet = TEXT
+        pagets__layoutwitouthomlet.value = EXT:vt12/Resources/Private/Templates/Einzelnrezept.html
+
+        # fallback
+        default = TEXT
+        default.value = EXT:vt12/Resources/Private/Templates/Default.html
+    }
+
+        settings{
+            rootUid = {$vt12.rootUid} 
+            logoFile = {$vt12.logoFile}
+            logoAlt = {$vt12.logoAlt}
+            logoTitle = {$vt12.logoTitle}
+            searchTargetPid = {$vt12.searchTargetPid}
+        }
+        
+    variables {
+        content0 < styles.content.get
+
+        content1 < styles.content.get
+        content1 {
+            select.where = {#colPos} = 1
+        }
+
+        content2 < styles.content.get
+        content2 {
+            select.where = {#colPos} = 2
+        }
+        
+        content3 < styles.content.get
+        content3 {
+            select.where = {#colPos} = 3
+        }
+    }
+}
+}

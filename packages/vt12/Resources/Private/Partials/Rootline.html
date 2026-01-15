@@ -1,0 +1,35 @@
+<div class="bg rootline">
+<!-- Prüft, ob die UID der aktuellen Seite ungleich der Root-UID ist -->
+<f:if condition="{data.uid} != {settings.rootUid}">
+
+    <!-- Schleife über alle Seiten im "rootline" Array -->
+    <f:for each="{rootline}" as="item">
+
+        <!-- Prüft, ob die aktuelle Seite im rootline Array die aktuelle Seite ist 
+             und ob der DokType ungleich 4 ist (4 = SysFolder in TYPO3) -->
+        <f:if condition="{item.current} && {item.data.doktype} != 4">
+            <f:then>
+                <!-- Wenn true: Ausgabe des Seitentitels als Text -->
+                {item.title}
+            </f:then>
+            <f:else>
+                <!-- Wenn false: Ausgabe eines Links zur Seite -->
+                <f:link.typolink 
+                    parameter="{item.data.uid}"  
+                    title="{item.title}"       
+                    target="{item.target}"     
+                    class="{f:if(condition: item.current, then: 'metaroot-current')}">
+                        <!-- Wenn die Seite aktuell ist, bekommt der Link die CSS-Klasse 'metaroot-current' -->
+                        {item.title}  <!-- Text des Links -->
+                </f:link.typolink>
+            </f:else>
+        </f:if>
+
+    </f:for>
+
+</f:if>
+</div>
+
+
+
+

@@ -1,0 +1,34 @@
+plugin.tx_indexedsearch._LOCAL_LANG {
+    de {
+        form.submit = Finden
+    }
+    es {
+        form.submit = Buscar
+    } 
+    en {
+        form.submit = Search
+    } 
+}
+
+plugin.tx_indexedsearch{
+    view{
+        partialRootPaths.100 = EXT:vt12/Resources/Private/Extensions/indexed_search/Partials/
+    }
+
+settings {
+    rootPidList = {$vt12.rootUid}
+    targetPid = {$vt12.searchTargetPid}
+
+    blind{
+        numberOfResults = 4
+    } 
+
+}
+} 
+
+lib.searchField = RECORDS
+lib.searchField {
+    tables = tt_content
+    source = {$vt12.searchPluginId}
+    dontCheckPid = 1
+} 

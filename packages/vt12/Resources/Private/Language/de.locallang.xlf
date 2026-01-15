@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages">
+        <header>
+            <tool tool-id="typo3" tool-name="TYPO3 CMS" tool-version="12"/>
+        </header>
+
+        <body>
+            <!-- Indexed Search -->
+            <trans-unit id="form.submit">
+                <source>Submit</source>
+                <target>Finden</target>
+            </trans-unit>
+
+            <trans-unit id="form.reset">
+                <source>Reset</source>
+                <target>Zurücksetzen</target>
+            </trans-unit>
+
+            <trans-unit id="no_results">
+                <source>No results found</source>
+                <target>Keine Ergebnisse gefunden</target>
+            </trans-unit>
+
+            <!-- Eigene Extension Labels -->
+            <trans-unit id="myextension.greeting">
+                <source>Hello</source>
+                <target>Hallo</target>
+            </trans-unit>
+
+            <trans-unit id="myextension.goodbye">
+                <source>Goodbye</source>
+                <target>Auf Wiedersehen</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

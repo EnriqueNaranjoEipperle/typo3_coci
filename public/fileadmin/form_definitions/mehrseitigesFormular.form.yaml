@@ -1,0 +1,51 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: mehrseitigesFormular
+label: 'Mehrseitiges Formular'
+prototypeName: standard
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: 'Deine Daten'
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: 'Deine Name'
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-2
+        label: 'Deine E-Mailadresse'
+  -
+    renderingOptions:
+      previousButtonLabel: Zurück
+      nextButtonLabel: Weiter
+    type: Page
+    identifier: page-2
+    label: 'Deine Nachricht'
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-3
+        label: Betreff
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: 'Deine Nachricht'
+  -
+    renderingOptions:
+      previousButtonLabel: Zurück
+      nextButtonLabel: Weiter
+    type: SummaryPage
+    identifier: summarypage-2
+    label: Zusammenfassung

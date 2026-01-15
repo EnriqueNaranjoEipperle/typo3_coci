@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:redirects/Resources/Private/Language/locallang.xlf" date="2017-12-29T20:22:14Z" product-name="redirects" target-language="es">
+    <header/>
+    <body>
+      <trans-unit id="redirects" resname="redirects" approved="yes">
+        <source>Redirect Settings</source>
+        <target state="final">Ajustes de redirección</target>
+      </trans-unit>
+      <trans-unit id="redirects.autoUpdateSlugs" resname="redirects.autoUpdateSlugs" approved="yes">
+        <source>Update the slugs of all sub pages automatically</source>
+        <target state="final">Actualizar automáticamente los slugs de todas las subpáginas</target>
+      </trans-unit>
+      <trans-unit id="redirects.autoCreateRedirects" resname="redirects.autoCreateRedirects" approved="yes">
+        <source>Create redirects for pages with a new slug automatically</source>
+        <target state="final">Crear redirecciones para páginas con un nuevo slug automáticamente</target>
+      </trans-unit>
+      <trans-unit id="redirects.redirectTTL" resname="redirects.redirectTTL" approved="yes">
+        <source>Time To Live of redirect records in days</source>
+        <target state="final">Tiempo de vida de los registros de redirección en días</target>
+      </trans-unit>
+      <trans-unit id="redirects.httpStatusCode" resname="redirects.httpStatusCode" approved="yes">
+        <source>HTTP Status Code for the redirect, 301 is the default</source>
+        <target state="final">Código de estado HTTP para la redirección, 301 es el predeterminado</target>
+      </trans-unit>
+      <trans-unit id="cleanupRedirectsCommand.label.days" resname="cleanupRedirectsCommand.label.days" approved="yes">
+        <source>Cleanup redirects older than provided number of days</source>
+        <target state="final">Limpiar las redirecciones anteriores al número de días proporcionado</target>
+      </trans-unit>
+      <trans-unit id="cleanupRedirectsCommand.label.domain" resname="cleanupRedirectsCommand.label.domain" approved="yes">
+        <source>Cleanup redirects matching provided domain(s)</source>
+        <target state="final">Limpiar las redirecciones que coinciden con el/los dominio(s) proporcionados</target>
+      </trans-unit>
+      <trans-unit id="cleanupRedirectsCommand.label.hitCount" resname="cleanupRedirectsCommand.label.hitCount" approved="yes">
+        <source>Cleanup redirects matching hit counts lower than given number</source>
+        <target state="final">Limpiar las redirecciones con entradas más bajas que el número proporcionado</target>
+      </trans-unit>
+      <trans-unit id="cleanupRedirectsCommand.label.path" resname="cleanupRedirectsCommand.label.path" approved="yes">
+        <source>Cleanup redirects matching given path (as database like expression)</source>
+        <target state="final">Limpiar redirecciones que coincidan con la ruta dada (como la expresión de la base de datos)</target>
+      </trans-unit>
+      <trans-unit id="cleanupRedirectsCommand.label.creationType" resname="cleanupRedirectsCommand.label.creationType" approved="yes">
+        <source>Cleanup redirects matching provided creation type</source>
+        <target state="final">Limpiar redirecciones que coincidan con el tipo de creación proporcionado</target>
+      </trans-unit>
+      <trans-unit id="cleanupRedirectsCommand.label.statusCode" resname="cleanupRedirectsCommand.label.statusCode" approved="yes">
+        <source>Cleanup redirects matching provided status code(s)</source>
+        <target state="final">Limpieza de redirecciones que coincidan con los códigos de estado proporcionados</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

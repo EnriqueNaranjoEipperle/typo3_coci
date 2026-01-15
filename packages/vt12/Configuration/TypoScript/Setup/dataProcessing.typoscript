@@ -1,0 +1,37 @@
+page.10.dataProcessing{ 
+    ##Main 
+    10 = menu
+    10{ 
+    as = mainMenu 
+    expandAll = 1 
+    levels = 2 
+    titleField = subtitle // nav_title // title 
+    } 
+    
+    ##Meta Navigation
+20 = menu
+20 {
+     as = metaNav
+     special = directory
+     ## ID der Seite, die die Meta-Seiten enthält
+     special.value = {$vt12.metaNavPid} 
+     levels = 1
+     titleField = subtitle // nav_title // title
+}
+
+##Rootline
+30 = menu
+30 {
+    as = rootline
+    special = rootline
+    special.range = 0|-1
+    titleField = subtitle // nav_title // title
+    includeNotInMenu = 1
+}
+
+40 = language-menu
+40 {
+        as = languageMenu
+      }
+
+}

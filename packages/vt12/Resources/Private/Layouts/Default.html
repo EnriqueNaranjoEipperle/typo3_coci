@@ -1,0 +1,22 @@
+<f:spaceless>
+
+<div class="bg">
+    <div class="header">
+            <f:link.typolink parameter="{settings.rootUid}"> 
+                <f:image src="{settings.logoFile}" width="150" height="50" alt="{settings.logoAlt}" title="{settings.logoTitle}"/>
+            </f:link.typolink>
+             <f:render partial="MainMenu" arguments="{_all}"/>
+             
+    </div>
+</div>
+
+<f:render partial="Rootline" arguments="{_all}"/>
+
+<!--TYPOSEARCH begin-->
+<f:render section="Body" optional="true" />
+<f:render section="Einzelnrezept" optional="true" />
+<!--TYPOSEARCH end-->
+
+<f:render partial="Footer" arguments="{metaNav: metaNav}" />
+
+</f:spaceless>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:scheduler/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="scheduler" target-language="es">
+    <header/>
+    <body>
+      <trans-unit id="function.check" resname="function.check" approved="yes">
+        <source>Scheduler setup check</source>
+        <target state="final">Comprobación de configuración del planificador</target>
+      </trans-unit>
+      <trans-unit id="function.info" resname="function.info" approved="yes">
+        <source>Available scheduler commands &amp; tasks</source>
+        <target state="final">Comandos y tareas disponibles en el planificador</target>
+      </trans-unit>
+      <trans-unit id="function.edit" resname="function.edit" approved="yes">
+        <source>Edit scheduled task "%s"</source>
+        <target state="final">Editar tarea programada "%s"</target>
+      </trans-unit>
+      <trans-unit id="msg.composerMode" resname="msg.composerMode" approved="yes">
+        <source>
+					The system is running in composer mode, the path to the `typo3` executable could not be reliably determined.
+					By default, the command to run in composer mode is `vendor/bin/typo3 scheduler:run`.
+				</source>
+        <target state="final">
+					El sistema se está ejecutando en modo Composer, la ruta al ejecutable `typo3` no pudo ser definida con seguridad
+					De forma predeterminada, el comando a ejecutar en modo Composer es `vendor/bin/typo3 scheduler:run`.
+				</target>
+      </trans-unit>
+      <trans-unit id="availableCommands" resname="availableCommands" approved="yes">
+        <source>This is the list of all available commands in this TYPO3 installation.</source>
+        <target state="final">Lista de todos los comandos disponibles en esta instalación de TYPO3.</target>
+      </trans-unit>
+      <trans-unit id="msg.infoScreenIntro" resname="msg.infoScreenIntro" approved="yes">
+        <source>This is the list of all available tasks in this TYPO3 installation.</source>
+        <target state="final">Lista de todas las tareas disponibles en esta instalación de TYPO3.</target>
+      </trans-unit>
+      <trans-unit id="msg.canNotDeleteRunningTask" resname="msg.canNotDeleteRunningTask" approved="yes">
+        <source>A running task may not be deleted.</source>
+        <target state="final">Una tarea en ejecución no puede ser eliminada.</target>
+      </trans-unit>
+      <trans-unit id="scheduler.form.palettes.general" resname="scheduler.form.palettes.general" approved="yes">
+        <source>General</source>
+        <target state="final">General</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

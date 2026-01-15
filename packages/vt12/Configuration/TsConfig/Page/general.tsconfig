@@ -1,0 +1,42 @@
+# Öffne die Konfiguration für Inhaltselemente
+    # Beziehung zur TCEFORM Konfiguration
+TCEFORM {
+    tt_content{ 
+        # Füge benutzerdefinierte Inhaltselemente zum Text & Medien Inhaltselement hinzu
+          layout{
+            types{
+                textmedia{
+                    addItems{
+                        10= Responsive Video
+                    }
+                }
+            }
+        }
+        # Customize options for header_layout field
+header_layout{
+    
+    altLabels{
+                # Define custom labels for header layout options
+                1 = h1 - Seitenüberschrift
+                2 = h2 - Themenüberschrift
+                3 = h3 - Überschrift 3. Ordnung
+                4 = h4 - Überschrift 4. Ordnung
+                5 = h5 - Überschrift 5. Ordnung
+            }
+                # Limit available header layout options to custom ones
+              removeItems = 0
+              # Add custom header layout options
+              addItems {
+                200 = h1 Größer und fetter
+            }
+        }
+    
+    }
+}
+
+RTE.default.preset = MyRTEPreset
+TCEMAIN.permissions {
+    group = show,editcontetn,edit,new,delete
+    groupid = 1
+} 
+

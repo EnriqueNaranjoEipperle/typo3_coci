@@ -1,0 +1,45 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+        <div class="menu">
+            <f:if condition="{data.uid} != {settings.searchTargetPid}">
+                <f:cObject typoscriptObjectPath="lib.searchField" />
+            </f:if>
+            <f:for each="{mainMenu}" as="item">
+                <f:if condition="{item.children}">
+                    <f:then>
+                        <div class="dropdown">
+                            <f:link.typolink 
+                                parameter="{item.data.uid}" 
+                                target="{item.target}" 
+                                title="{item.title}" 
+                                class="menu-link dropdown-toggle"
+                                additionalAttributes="{ 'aria-expanded': 'false' }">
+                                {item.title}
+                            </f:link.typolink>
+
+                            <div class="dropdown-menu">
+                                <f:for each="{item.children}" as="child">
+                                    <f:link.typolink 
+                                        parameter="{child.data.uid}" 
+                                        target="{child.target}" 
+                                        title="{child.title}" 
+                                        class="dropdown-item">
+                                        {child.title}
+                                    </f:link.typolink>
+                                </f:for>
+                            </div>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <f:link.typolink 
+                            parameter="{item.data.uid}" 
+                            target="{item.target}" 
+                            title="{item.title}" 
+                            class="menu-link{f:if(condition: item.current, then:' nav-current')}">
+                            {item.title}
+                        </f:link.typolink>
+                    </f:else>
+                </f:if>
+            </f:for>
+             <f:render partial="LanguageMenu" arguments="{_all}" />
+        </div>
+</html>

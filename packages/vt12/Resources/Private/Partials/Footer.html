@@ -1,0 +1,29 @@
+<div class="impressum1" id="impressum">
+    <div class="impressum">
+        <f:link.typolink parameter="{settings.rootUid}"> 
+            <f:image src="{settings.logoFile}" width="150" height="50" alt="{settings.logoAlt}" title="{settings.logoTitle}"/>
+       </f:link.typolink>
+
+ <a>
+    <f:cObject typoscriptObjectPath="lib.copyright"/>
+ </a>
+        
+
+
+        <f:for each="{metaNav}" as="item" iteration="i">
+            <f:link.typolink parameter="{item.data.uid}" title="{item.title}" target="{item.target}" class="f:if(condition.current, then: 'metanav-currrent')">
+                {item.title}
+            </f:link.typolink>
+        </f:for>
+    </div>
+
+    <div class="impressumend">
+        Created my free logo at <a href="https://logomakr.com/" target="_blank">LogoMakr.com</a>
+        The icons are provided by <a href="https://fontawesome.com/" rel="nofollow" target="_blank">FontAwesome</a>
+        unter the <a href="https://fontawesome.com/license" target="_blank" rel="nofollow">
+            Creative Commons Attribution 4.0 International license
+        </a>.
+    </div>
+</div>
+
+

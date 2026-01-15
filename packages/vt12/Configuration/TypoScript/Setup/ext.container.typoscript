@@ -1,0 +1,53 @@
+tt_content.2cols < lib.contentElement
+tt_content.2cols {
+    templateName = 2cols
+    templateRootPaths.10 = EXT:vt12/Resources/Private/Extensions/container/Templates/
+
+    dataProcessing {
+        201 = B13\Container\DataProcessing\ContainerProcessor
+        201 {
+            colPos = 201
+            as = childrenLeft
+        }
+
+        202 = B13\Container\DataProcessing\ContainerProcessor
+        202 {
+            colPos = 202
+            as = childrenRight
+        }
+    }
+}
+
+
+tt_content.3cols < lib.contentElement
+tt_content.3cols {
+    templateName = 3cols
+    templateRootPaths.10 = EXT:vt12/Resources/Private/Extensions/container/Templates/
+
+    dataProcessing {
+        301 = B13\Container\DataProcessing\ContainerProcessor
+        301 {
+            colPos = 301
+            as = childrenLeft
+        }
+
+        302 = B13\Container\DataProcessing\ContainerProcessor
+        302 {
+            colPos = 302
+            as = childrenMiddle
+        }
+
+        303 = B13\Container\DataProcessing\ContainerProcessor
+        303 {
+            colPos = 303
+            as = childrenRight
+        }
+    }
+}
+$GLOBALS['TCA']['tt_content']['types']['2cols'] = [
+    'showitem' => 'sys_language_uid, CType, header, colPos, tx_container_parenting, space_before_class, space_after_class'
+];
+
+$GLOBALS['TCA']['tt_content']['types']['3cols'] = [
+    'showitem' => 'sys_language_uid, CType, header, colPos, tx_container_parenting, space_before_class, space_after_class'
+];

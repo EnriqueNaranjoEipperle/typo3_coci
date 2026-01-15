@@ -1,0 +1,14 @@
+options {
+    pageTree {
+        showPageIdWithTitle = 1
+    }
+}
+
+##dann gehe noch zu :
+packages/vt12/ext_localconf.php
+
+##und ganz unten füge ein:
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
+    '@import "EXT:vt12/Configuration/TsConfig/Page/User/general.tsconfig"'
+); 

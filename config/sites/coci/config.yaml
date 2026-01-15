@@ -1,0 +1,52 @@
+base: 'https://coci.ddev.site/'
+baseVariants:
+  -
+    base: 'https://coci.ddev.site/'
+    condition: 'applicationContext == "Development"'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    locale: de_DE.utf8
+    hreflang: de
+    base: /
+    websiteTitle: ''
+    navigationTitle: Deutsch
+    flag: de
+    languageId: 0
+  -
+    title: Español
+    enabled: true
+    locale: es_ES.utf8
+    hreflang: ''
+    base: /es/
+    websiteTitle: ''
+    navigationTitle: Español
+    fallbackType: strict
+    fallbacks: ''
+    flag: ec
+    languageId: 1
+  -
+    title: English
+    enabled: true
+    locale: en_US.utf8
+    hreflang: en_Us
+    base: /en/
+    websiteTitle: ''
+    navigationTitle: English
+    fallbackType: strict
+    fallbacks: ''
+    flag: us
+    languageId: 2
+rootPageId: 6
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      sitemap.xml: 1533906435
+routes:
+  -
+    route: robots.txt
+    type: staticText
+    content: "User-agent: *\r\nDisallow: /typo3/\r\nDisallow: /typo3temp/\r\nSitemap: sitemap.xml \r\n\r\n"
+websiteTitle: ''

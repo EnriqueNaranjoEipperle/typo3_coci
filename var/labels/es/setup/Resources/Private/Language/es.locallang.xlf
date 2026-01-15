@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:setup/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:37Z" product-name="setup" target-language="es">
+    <header/>
+    <body>
+      <trans-unit id="UserSettings" resname="UserSettings" approved="yes">
+        <source>User Settings</source>
+        <target state="final">Configuración del usuario</target>
+      </trans-unit>
+      <trans-unit id="language" resname="language" approved="yes">
+        <source>Language</source>
+        <target state="final">Idioma</target>
+      </trans-unit>
+      <trans-unit id="simulate" resname="simulate" approved="yes">
+        <source>Simulate backend user</source>
+        <target state="final">Simular usuario del backend</target>
+      </trans-unit>
+      <trans-unit id="personal_data" resname="personal_data" approved="yes">
+        <source>Personal data</source>
+        <target state="final">Información personal</target>
+      </trans-unit>
+      <trans-unit id="startModule" resname="startModule" approved="yes">
+        <source>Start up in the following module</source>
+        <target state="final">Iniciar en el siguiente módulo</target>
+      </trans-unit>
+      <trans-unit id="emailMeAtLogin" resname="emailMeAtLogin" approved="yes">
+        <source>Notify me by email when somebody logs in from my account</source>
+        <target state="final">Notificarme por email si alguien abre sesión &lt;br /&gt;desde mi cuenta</target>
+      </trans-unit>
+      <trans-unit id="helpText" resname="helpText" approved="yes">
+        <source>Show help text when applicable</source>
+        <target state="final">Mostrar el texto de ayuda cuando corresponda</target>
+      </trans-unit>
+      <trans-unit id="edit_docModuleUpload" resname="edit_docModuleUpload" approved="yes">
+        <source>File upload directly in Doc-module</source>
+        <target state="final">Subir archivo directamente en el módulo Doc</target>
+      </trans-unit>
+      <trans-unit id="showHiddenFilesAndFolders" resname="showHiddenFilesAndFolders" approved="yes">
+        <source>Show hidden files and folders in the filelist</source>
+        <target state="final">Mostrar ficheros ocultos y carpetas en la lista de ficheros</target>
+      </trans-unit>
+      <trans-unit id="functions" resname="functions" approved="yes">
+        <source>Advanced functions</source>
+        <target state="final">Funciones avanzadas</target>
+      </trans-unit>
+      <trans-unit id="activateChanges" resname="activateChanges" approved="yes">
+        <source>Notice! In order to activate most of these changes, please reload the backend (eg. logout and login again).</source>
+        <target state="final">¡Aviso! Para activar la mayor parte de estos cambios, por favor recargue el backend (i.e.: salga y entre nuevamente)</target>
+      </trans-unit>
+      <trans-unit id="levels" resname="levels" approved="yes">
+        <source>levels</source>
+        <target state="final">niveles</target>
+      </trans-unit>
+      <trans-unit id="beUser_realName" resname="beUser_realName" approved="yes">
+        <source>Your name</source>
+        <target state="final">Su nombre</target>
+      </trans-unit>
+      <trans-unit id="beUser_email" resname="beUser_email" approved="yes">
+        <source>Your email address</source>
+        <target state="final">Su dirección de email</target>
+      </trans-unit>
+      <trans-unit id="newPassword" resname="newPassword" approved="yes">
+        <source>New password</source>
+        <target state="final">Nueva clave de acceso</target>
+      </trans-unit>
+      <trans-unit id="newPassword_ok" resname="newPassword_ok" approved="yes">
+        <source>Password was updated.</source>
+        <target state="final">La clave de acceso ha sido actualizada</target>
+      </trans-unit>
+      <trans-unit id="setupWasUpdated" resname="setupWasUpdated" approved="yes">
+        <source>User settings were updated.</source>
+        <target state="final">La configuración de usuario fue actualizada</target>
+      </trans-unit>
+      <trans-unit id="newPassword_failed" resname="newPassword_failed" approved="yes">
+        <source>Password was NOT updated because you didn't enter the same password twice.</source>
+        <target state="final">La clave de acceso no ha sido actualizada debido a que la misma clave debe ser introducida dos veces para verificación.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

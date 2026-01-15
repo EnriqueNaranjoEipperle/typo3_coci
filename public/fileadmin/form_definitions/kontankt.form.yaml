@@ -1,0 +1,70 @@
+
+renderingOptions:
+  submitButtonLabel: Schicken
+type: Form
+identifier: kontankt
+label: Kontaktformular
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: '{text-2}'
+      recipients:
+        naranjohaus@web.de: Enrique
+      senderAddress: noreply@coci.ddev.site
+      senderName: '{text-1}'
+      replyToRecipients:
+        '{email-1}': '{textarea-2}'
+      carbonCopyRecipients:
+        '': ''
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      title: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      pageUid: '30'
+      additionalParameters: ''
+      fragment: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: Kontaktformular
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Name
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Name und Nachname bitte'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: 'Email Adresse*'
+        validators:
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-2
+        label: 'Betreff (um was geht es?)*'
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: 'Deine Nachricht*'
