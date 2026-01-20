@@ -1,16 +1,77 @@
+############################
+# TYPO3 / Composer
+############################
 
+# Composer dependencies
+/vendor/
+
+# TYPO3 public assets (werden generiert)
+/public/typo3/
+/public/typo3conf/ext/*/Resources/Public/_processed_/
+/public/_assets/
+/public/typo3temp/
+
+# TYPO3 temporary & cache
+/var/
+/typo3temp/
+**/typo3temp/
+
+# Logs
+/var/log/
+/public/typo3temp/logs/
+
+############################
+# Configuration (sensitiv)
+############################
+
+# Local configuration
+/config/system/additional.php
+/config/system/settings.php
+/config/system/settings.local.php
+
+# TYPO3 legacy
+/typo3conf/LocalConfiguration.php
+/typo3conf/AdditionalConfiguration.php
+
+############################
+# Environment / secrets
+############################
+
+.env
+.env.*
+!.env.example
+
+############################
+# IDE / OS
+############################
+
+# macOS
 .DS_Store
-.idea
-.vscode
-/var/*
-!/var/labels
-/vendor
-/public/*
-!/public/.htaccess
-!/public/typo3conf
-/public/typo3conf/*
-!/config/system/settings.php
-!/config/system/additional.php
-*.gz
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# PhpStorm
+.idea/
+
+############################
+# Tests / build artifacts
+############################
+
+/node_modules/
+/coverage/
+/.build/
+/dist/
+
+############################
+# Misc
+############################
+
+*.log
 *.cache
-database.sql
+*.tmp
+

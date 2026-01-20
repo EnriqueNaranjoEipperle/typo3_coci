@@ -21,10 +21,6 @@ class layout_Module_html_1ccc2abe2af579a4 extends \TYPO3Fluid\Fluid\Core\Compile
   array (
     0 => 'TYPO3\\CMS\\Form\\ViewHelpers',
   ),
-  'be' => 
-  array (
-    0 => 'TYPO3\\CMS\\Backend\\ViewHelpers',
-  ),
 ));
     }
     /**

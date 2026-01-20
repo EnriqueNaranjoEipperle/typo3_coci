@@ -4443,7 +4443,7 @@ return array (
           array (
             'type' => 'datetime',
             'format' => 'date',
-            'default' => 1768406708,
+            'default' => 1768504575,
           ),
         ),
         'content_modification_date' => 
@@ -4456,7 +4456,7 @@ return array (
           array (
             'type' => 'datetime',
             'format' => 'date',
-            'default' => 1768406708,
+            'default' => 1768504575,
           ),
         ),
         'note' => 
@@ -5018,6 +5018,75 @@ return array (
           'config' => 
           array (
             'type' => 'imageManipulation',
+            'cropVariants' => 
+            array (
+              'desktop' => 
+              array (
+                'title' => 'Desktop',
+                'allowedAspectRatios' => 
+                array (
+                  '16:9' => 
+                  array (
+                    'title' => '16:9',
+                    'value' => 1.7777777777777777,
+                  ),
+                  '4:3' => 
+                  array (
+                    'title' => '4:3',
+                    'value' => 1.3333333333333333,
+                  ),
+                  'free' => 
+                  array (
+                    'title' => 'Free',
+                    'value' => 0.0,
+                  ),
+                ),
+              ),
+              'tablet' => 
+              array (
+                'title' => 'Tablet',
+                'allowedAspectRatios' => 
+                array (
+                  '4:3' => 
+                  array (
+                    'title' => '4:3',
+                    'value' => 1.3333333333333333,
+                  ),
+                  '1:1' => 
+                  array (
+                    'title' => '1:1',
+                    'value' => 1.0,
+                  ),
+                  'free' => 
+                  array (
+                    'title' => 'Free',
+                    'value' => 0.0,
+                  ),
+                ),
+              ),
+              'mobile' => 
+              array (
+                'title' => 'Mobile',
+                'allowedAspectRatios' => 
+                array (
+                  '4:5' => 
+                  array (
+                    'title' => '4:5',
+                    'value' => 0.8,
+                  ),
+                  '1:1' => 
+                  array (
+                    'title' => '1:1',
+                    'value' => 1.0,
+                  ),
+                  'free' => 
+                  array (
+                    'title' => 'Free',
+                    'value' => 0.0,
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
         'autoplay' => 

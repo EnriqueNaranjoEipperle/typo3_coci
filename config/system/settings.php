@@ -5,6 +5,7 @@ return [
         'compressionLevel' => '9',
         'debug' => true,
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$NFFSWE1WRlNQb0h0bFZ3bg$dZiO9OCz7v6bwvcMxxgH7f9Ut25q53x1YRCWgcyvDbg',
+        'lockSSL' => true,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],

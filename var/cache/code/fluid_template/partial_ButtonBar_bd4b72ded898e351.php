@@ -21,10 +21,6 @@ class partial_ButtonBar_bd4b72ded898e351 extends \TYPO3Fluid\Fluid\Core\Compiler
   array (
     0 => 'TYPO3\\CMS\\Form\\ViewHelpers',
   ),
-  'be' => 
-  array (
-    0 => 'TYPO3\\CMS\\Backend\\ViewHelpers',
-  ),
 ));
     }
     /**

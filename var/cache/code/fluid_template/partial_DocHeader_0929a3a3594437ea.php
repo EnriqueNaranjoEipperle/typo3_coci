@@ -21,10 +21,6 @@ class partial_DocHeader_0929a3a3594437ea extends \TYPO3Fluid\Fluid\Core\Compiler
   array (
     0 => 'TYPO3\\CMS\\Form\\ViewHelpers',
   ),
-  'be' => 
-  array (
-    0 => 'TYPO3\\CMS\\Backend\\ViewHelpers',
-  ),
 ));
     }
     /**
